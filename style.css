@@ -355,17 +355,17 @@ nav h3{
 }
 
 .number-slider{
-    width: 100px;
-    height: 80px;
+    width: 50px;
+    height: 8vh;
     text-align: center;
 }
 
-.number-slider > div:nth-child(2){
+.number-slider > div:nth-child(1){
     display: flex;
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     transform: translateY(-79%);
-    border: 1px solid black;
 }
 
 .number-slider h1{
@@ -374,7 +374,7 @@ nav h3{
 
 .number-slider-wrapper > div:nth-child(1) h1{
     width: 50px;
-    border: 1px solid red;
+    text-align: center;
 }
 
 .number-slider-wrapper h1{

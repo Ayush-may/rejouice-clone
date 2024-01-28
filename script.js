@@ -124,10 +124,10 @@ gsap.to('.page4 .overflow-this-div-inside h2',{
     ease: Expo.easeOut,
     scrollTrigger: {
         trigger:".page4",
-        start:"top 80%",
-        end:"bottom 90%",
+        start:"top center",
+        end:"bottom center+=300",
         scrub:1,
-        markers: false
+        markers: true
     }
 });
 
@@ -144,6 +144,7 @@ gsap.from('.number-slider div:nth-child(1)',{
    } 
 });
 
+// scroll progress animation
 gsap.to('.scroll-progress .progress',{
     width: "100%",
     duration:1,
@@ -153,6 +154,6 @@ gsap.to('.scroll-progress .progress',{
         start: "top top",
         end: "bottom bottom",
         scrub: 1,
-        markers: true
+        markers: false
     }
 });
