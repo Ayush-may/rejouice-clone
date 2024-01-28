@@ -110,7 +110,7 @@ load.to('.screen-loader h6',{
     ease: Expo.easeInOut
 },">-0.3").to('#page1-content h1 span',{
     y:0,
-    duraion:2,
+    duration:2,
     opacity:1,
     stagger:0.05,
     ease:"power2"
@@ -119,7 +119,7 @@ load.to('.screen-loader h6',{
 
 gsap.to('.page4 .overflow-this-div-inside h2',{
     y:0,
-    duraion:3,
+    duration:3,
     stagger:0.1,
     ease: Expo.easeOut,
     scrollTrigger: {
@@ -140,6 +140,19 @@ gsap.from('.number-slider div:nth-child(1)',{
         start:"70% 80%",
         end:"80% 90%",
         scrub:4,
-        markers: true
+        markers: false
    } 
+});
+
+gsap.to('.scroll-progress .progress',{
+    width: "100%",
+    duration:1,
+    ease:"none",
+    scrollTrigger:{
+        trigger:'main',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        markers: true
+    }
 });

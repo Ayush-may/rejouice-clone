@@ -410,11 +410,25 @@ nav h3{
     transform: translate(-50%,-50%);
 }
 
-
 .page5{
     width: 100%;
     height: 100vh;
     background-color: black;
     position: relative;
     overflow: hidden;
+}
+
+.scroll-progress{
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 0.6vh;
+    background-color: grey;
+    top: 0;
+}
+
+.scroll-progress .progress{
+    height: 100%;
+    width: 0%;
+    background-color: tomato;
 }
