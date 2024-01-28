@@ -249,9 +249,9 @@ nav h3{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: black;
+    color: white;
     z-index: 999;
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +345,7 @@ nav h3{
     opacity: 0.5;
 }
 
-.circle > div:nth-child(1){
+.circle > div:nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,16 +360,21 @@ nav h3{
     text-align: center;
 }
 
-.number-slider div:nth-child(1){
+.number-slider > div:nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateY(-79%);
+    border: 1px solid black;
 }
 
 .number-slider h1{
     font-weight: 100;
-    
+}
+
+.number-slider-wrapper > div:nth-child(1) h1{
+    width: 50px;
+    border: 1px solid red;
 }
 
 .number-slider-wrapper h1{
@@ -377,7 +382,7 @@ nav h3{
     font-size: 4vw;
 }
 
-.circle > div:nth-child(1) > div:nth-child(1){
+.circle > div:nth-child(2) > div:nth-child(1){
     display: flex;
     justify-content: center;
     font-weight: 100;
@@ -390,16 +395,26 @@ nav h3{
 .available-text h2{
     font-weight: 100;
     font-size: 1.7vw;
-    /* transform: translateX(100px); */
+    transform: translateX(100px);
 }
 
-/* .black-cursor{
+.black-cursor{
     width: 6vw;
     height: 6vw;
     background-color: black;
     color: white;
     border-radius: 999px;
     position: fixed;
-    z-index: 10;
+    z-index: 99;
+    border: 2px  solid red;
     transform: translate(-50%,-50%);
-} */
+}
+
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
