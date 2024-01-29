@@ -316,12 +316,12 @@ nav h3{
 
 .page4 .circle{
     height: 100vh;
-    /* border: 1px solid red; */
     position: relative;
     margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .page4 video{
@@ -399,15 +399,18 @@ nav h3{
 }
 
 .black-cursor{
-    width: 6vw;
-    height: 6vw;
+    width: 7vw;
+    height: 7vw;
     background-color: black;
     color: white;
     border-radius: 999px;
     position: fixed;
-    z-index: 99;
-    border: 2px  solid red;
+    z-index: 100;
+    top: 0;
+    left: 0;
     transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 7vw;
 }
 
 .page5{

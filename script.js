@@ -157,3 +157,30 @@ gsap.to('.scroll-progress .progress',{
         markers: false
     }
 });
+
+
+// take one circle animation 
+$('.page4 .circle').on('mouseleave',(e)=>{
+    gsap.to('.black-cursor',{
+        opacity: 1,
+        x: e.clientX,
+        y: e.clientY,
+        rotate : 40,
+        opacity : 0,
+        scale: 0,
+        ease:"back",
+        duration:1
+    });
+});
+$('.page4 .circle').on('mousemove',(e)=>{
+    gsap.to('.black-cursor',{
+        opacity: 1,
+        x: e.clientX,
+        y: e.clientY,
+        rotate : 0,
+        opacity:1,
+        scale:1,
+        ease:"back",
+        duration:1
+    });
+});
