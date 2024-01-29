@@ -35,6 +35,7 @@ html::-webkit-scrollbar{
     background-color: #ff5f38;
     border-radius: 50%;
     position: fixed;
+    opacity: 0;
     z-index: 8;
     display: flex;
     align-items: center;
@@ -399,6 +400,8 @@ nav h3{
 }
 
 .black-cursor{
+    opacity: 0;
+    transform: scale(0);
     width: 7vw;
     height: 7vw;
     background-color: black;
@@ -411,14 +414,6 @@ nav h3{
     transform: translate(-50%,-50%);
     text-align: center;
     line-height: 7vw;
-}
-
-.page5{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    position: relative;
-    overflow: hidden;
 }
 
 .scroll-progress{
@@ -434,4 +429,52 @@ nav h3{
     height: 100%;
     width: 0%;
     background-color: tomato;
+}
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    padding: 4vw 3vw;
+}
+
+.page5 .overflow-this-div-inside{
+    overflow: hidden;
+}
+
+.footer-big-text h1{
+    color: white;
+    transform: translateY(100%);
+}
+
+.footer-big-text > h1:nth-child(1){
+    font-size: 5vw;
+    font-weight: 100;
+}
+
+.ayush-big-text{
+    font-size: 13vw;
+    font-weight: 400;
+    text-wrap: none;
+}
+
+.black-divider{
+    margin: 1vw 0;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+}
+
+.last-big-text-rejouice{
+    height: 27vw;
+    color: white;
+}
+
+.last-big-text-rejouice h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 26vw;
+    transform: translateY(100%);
 }

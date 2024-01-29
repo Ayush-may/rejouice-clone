@@ -127,7 +127,7 @@ gsap.to('.page4 .overflow-this-div-inside h2',{
         start:"top center",
         end:"bottom center+=300",
         scrub:1,
-        markers: true
+        markers: false
     }
 });
 
@@ -172,6 +172,7 @@ $('.page4 .circle').on('mouseleave',(e)=>{
         duration:1
     });
 });
+
 $('.page4 .circle').on('mousemove',(e)=>{
     gsap.to('.black-cursor',{
         opacity: 1,
@@ -183,4 +184,45 @@ $('.page4 .circle').on('mousemove',(e)=>{
         ease:"back",
         duration:1
     });
+});
+
+// Page 5 animation
+
+gsap.to('.footer-big-text h1',{
+    y:0,
+    duration: 1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger: ".page5",
+        start: "top center",
+        end: "center center",
+        scrub: 1,
+        markers: false
+    }
+});
+
+gsap.to('.black-divider',{
+    width:"100%",
+    duration: 3,
+    ease: Expo.easeInOut,
+    scrollTrigger:{
+        trigger: ".page5",
+        start: "top center",
+        end: "center+=200px center",
+        scrub: 1,
+        markers: false
+    }
+});
+
+gsap.to('.last-big-text-rejouice h1',{
+    y: 0,
+    duration: 5,
+    ease: Expo.easeInOut,
+    scrollTrigger:{
+        trigger: ".page5",
+        start: "top center-=200px",
+        end: "center center-=100px",
+        scrub: 1,
+        markers: false
+    }
 });
